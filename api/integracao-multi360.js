@@ -9,7 +9,7 @@ export default async function handler(req, res) {
 
   if (isEmail) {
     // Envia para Make ou RD Station (se quiser)
-    await fetch('https://hook.us1.make.com/SEU_WEBHOOK', {
+    await fetch('https://hook.us2.make.com/ipvr4jltalnynioz3oj7hiyxag9xu5cv', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ nome, email: text, uid, whatsapp })
